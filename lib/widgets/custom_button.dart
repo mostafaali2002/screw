@@ -1,33 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:screw/constant.dart';
-import 'package:screw/views/score_view.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({
+  CustomButton({
     super.key,
+    this.border,
+    this.onPressed,
+    required this.width,
+    required this.btnColor,
+    required this.text,
   });
-
+  final void Function()? onPressed;
+  final double width;
+  final Color btnColor;
+  final String text;
+  BoxBorder? border;
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 200,
+      width: width,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          color: const Color(0xffFF8E44)),
+        border: border,
+        borderRadius: BorderRadius.circular(15),
+        color: btnColor,
+      ),
       child: MaterialButton(
-        onPressed: () {
-          if (Style.formkey.currentState!.validate()) {
-            Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ScoreView(),
-                ));
-          }
-        },
-        child: const Text("سكرو",
-            style: TextStyle(
-              fontSize: 20,
-            )),
+        onPressed: onPressed,
+        child: Text(text,
+            style: const TextStyle(fontSize: 20, color: Colors.white)),
       ),
     );
   }

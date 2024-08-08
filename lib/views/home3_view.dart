@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:screw/constant.dart';
-import 'package:screw/views/score_view.dart';
+import 'package:screw/views/score3_view.dart';
 import 'package:screw/widgets/custom_button.dart';
 import 'package:screw/widgets/players_text_field.dart';
 
-class HomeView extends StatefulWidget {
-  const HomeView({super.key});
+class HomeView3 extends StatefulWidget {
+  const HomeView3({super.key});
 
   @override
-  State<HomeView> createState() => _HomeViewState();
+  State<HomeView3> createState() => _HomeViewState();
 }
 
-class _HomeViewState extends State<HomeView> {
+class _HomeViewState extends State<HomeView3> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -59,10 +59,6 @@ class _HomeViewState extends State<HomeView> {
                   const SizedBox(
                     height: Style.ksizeBetween,
                   ),
-                  PlayersTextField(
-                    controller: Style.textFour,
-                    hint: 'اللاعب الرابع',
-                  ),
                   const SizedBox(
                     height: 20,
                   ),
@@ -75,7 +71,7 @@ class _HomeViewState extends State<HomeView> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const ScoreView(),
+                              builder: (context) => const ScoreView3(),
                             ));
                       }
                     },

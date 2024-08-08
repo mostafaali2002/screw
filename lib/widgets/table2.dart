@@ -4,8 +4,8 @@ import 'package:screw/constant.dart';
 import 'package:screw/cubit/get_score/get_score_cubit.dart';
 import 'package:screw/widgets/text_field_score.dart';
 
-class ScoreTable extends StatelessWidget {
-  const ScoreTable({
+class ScoreTable2 extends StatelessWidget {
+  const ScoreTable2({
     super.key,
   });
 
@@ -180,132 +180,6 @@ class ScoreTable extends StatelessWidget {
             DataCell(
               Text(
                 '${Style.textTwo.text} ',
-                style: const TextStyle(fontSize: 20.0, color: Colors.white),
-              ),
-            ),
-          ]),
-          DataRow(cells: <DataCell>[
-            DataCell(
-              TextFieldScore(
-                controller: Style.controller[10],
-                onSubmitted: (p0) {
-                  if (Style.forkey.currentState!.validate()) {
-                    BlocProvider.of<GetScoreCubit>(context)
-                        .getScore(list: Style.controller);
-                  }
-                },
-              ),
-            ),
-            DataCell(
-              TextFieldScore(
-                controller: Style.controller[11],
-                onSubmitted: (p0) {
-                  if (Style.forkey.currentState!.validate()) {
-                    BlocProvider.of<GetScoreCubit>(context)
-                        .getScore(list: Style.controller);
-                  }
-                },
-              ),
-            ),
-            DataCell(
-              TextFieldScore(
-                controller: Style.controller[12],
-                onSubmitted: (p0) {
-                  if (Style.forkey.currentState!.validate()) {
-                    BlocProvider.of<GetScoreCubit>(context)
-                        .getScore(list: Style.controller);
-                  }
-                },
-              ),
-            ),
-            DataCell(
-              TextFieldScore(
-                controller: Style.controller[13],
-                onSubmitted: (p0) {
-                  if (Style.forkey.currentState!.validate()) {
-                    BlocProvider.of<GetScoreCubit>(context)
-                        .getScore(list: Style.controller);
-                  }
-                },
-              ),
-            ),
-            DataCell(
-              TextFieldScore(
-                controller: Style.controller[14],
-                onSubmitted: (p0) {
-                  if (Style.forkey.currentState!.validate()) {
-                    BlocProvider.of<GetScoreCubit>(context)
-                        .getScore(list: Style.controller);
-                  }
-                },
-              ),
-            ),
-            DataCell(
-              Text(
-                '${Style.textthree.text} ',
-                style: const TextStyle(fontSize: 20.0, color: Colors.white),
-              ),
-            ),
-          ]),
-          DataRow(cells: <DataCell>[
-            DataCell(
-              TextFieldScore(
-                controller: Style.controller[15],
-                onSubmitted: (p0) {
-                  if (Style.forkey.currentState!.validate()) {
-                    BlocProvider.of<GetScoreCubit>(context)
-                        .getScore(list: Style.controller);
-                  }
-                },
-              ),
-            ),
-            DataCell(
-              TextFieldScore(
-                controller: Style.controller[16],
-                onSubmitted: (p0) {
-                  if (Style.forkey.currentState!.validate()) {
-                    BlocProvider.of<GetScoreCubit>(context)
-                        .getScore(list: Style.controller);
-                  }
-                },
-              ),
-            ),
-            DataCell(
-              TextFieldScore(
-                controller: Style.controller[17],
-                onSubmitted: (p0) {
-                  if (Style.forkey.currentState!.validate()) {
-                    BlocProvider.of<GetScoreCubit>(context)
-                        .getScore(list: Style.controller);
-                  }
-                },
-              ),
-            ),
-            DataCell(
-              TextFieldScore(
-                controller: Style.controller[18],
-                onSubmitted: (p0) {
-                  if (Style.forkey.currentState!.validate()) {
-                    BlocProvider.of<GetScoreCubit>(context)
-                        .getScore(list: Style.controller);
-                  }
-                },
-              ),
-            ),
-            DataCell(
-              TextFieldScore(
-                controller: Style.controller[19],
-                onSubmitted: (p0) {
-                  if (Style.forkey.currentState!.validate()) {
-                    BlocProvider.of<GetScoreCubit>(context)
-                        .getScore(list: Style.controller);
-                  }
-                },
-              ),
-            ),
-            DataCell(
-              Text(
-                '${Style.textFour.text}  ',
                 style: const TextStyle(fontSize: 20.0, color: Colors.white),
               ),
             ),

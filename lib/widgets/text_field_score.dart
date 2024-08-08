@@ -27,6 +27,7 @@ class TextFieldScore extends StatelessWidget {
       keyboardType: TextInputType.number,
       decoration: const InputDecoration(
           // hintText: "0",
+
           ),
     );
   }
