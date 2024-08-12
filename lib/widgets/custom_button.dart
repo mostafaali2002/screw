@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  CustomButton({
+  const CustomButton({
     super.key,
     this.border,
     this.onPressed,
@@ -13,7 +13,7 @@ class CustomButton extends StatelessWidget {
   final double width;
   final Color btnColor;
   final String text;
-  BoxBorder? border;
+  final BoxBorder? border;
   @override
   Widget build(BuildContext context) {
     return Container(

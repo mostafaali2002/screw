@@ -28,6 +28,22 @@ class _ScoreViewState extends State<ScoreView2> {
                 color: Color(0xffFF8E44),
                 fontWeight: FontWeight.bold),
           ),
+          const SizedBox(
+            height: 15,
+          ),
+          IconButton(
+              onPressed: () {
+                setState(() {
+                  for (int i = 0; i < Style.controller.length; i++) {
+                    Style.controller[i].value =
+                        const TextEditingValue(text: "0");
+                  }
+                });
+              },
+              icon: const Icon(
+                Icons.replay,
+                size: 36,
+              )),
           const SizedBox(height: 50),
           const ScoreTable2(),
           const SizedBox(height: 35),

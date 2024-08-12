@@ -4,11 +4,16 @@ import 'package:screw/constant.dart';
 import 'package:screw/cubit/get_score/get_score_cubit.dart';
 import 'package:screw/widgets/text_field_score.dart';
 
-class ScoreTable extends StatelessWidget {
+class ScoreTable extends StatefulWidget {
   const ScoreTable({
     super.key,
   });
 
+  @override
+  State<ScoreTable> createState() => _ScoreTableState();
+}
+
+class _ScoreTableState extends State<ScoreTable> {
   @override
   Widget build(BuildContext context) {
     return Form(
